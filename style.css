@@ -77,3 +77,18 @@ img{
     background-color: #8fac55;
     text-decoration: line-through;
 }
+
+@media (max-width:768px) {
+    .container {
+      width: 90%;
+    }
+    .input-task{
+        width: 65%;
+    }
+    .button-task{
+        width: auto;
+    }
+    .task img{
+        opacity: 1;
+    }
+  }
