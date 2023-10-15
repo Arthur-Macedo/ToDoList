@@ -5,18 +5,17 @@ const listaCompleta = document.querySelector(".list-tasks");
 let minhaLista = []
 
 function adicionarTarefas() {
-  minhaLista.push({
-    tarefa: input.value,
-    concluida: false,
-  });
-
   if (input.value === "") {
     alert("Adicione uma tarefa!");
     return false;
   }
-
+  
+  minhaLista.push({
+    tarefa: input.value,
+    concluida: false,
+  });
+  
   mostrarTarefas();
-
 }
 
 function mostrarTarefas() {
