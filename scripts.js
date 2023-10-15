@@ -10,7 +10,10 @@ function adicionarTarefas() {
     concluida: false,
   });
 
-  input.value = ''
+  if (input.value === "") {
+    alert("Adicione uma tarefa!");
+    return false;
+  }
 
   mostrarTarefas();
 
